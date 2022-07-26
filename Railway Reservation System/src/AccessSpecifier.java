@@ -1,23 +1,25 @@
+import Passenger.Account;
 
 public class AccessSpecifier {
 
-	private String id;
-	private String password;
+	private Account account;
 	private String accessType;
 	
 	
-	public String getId() {
-		return id;
+
+	public AccessSpecifier(Account account, String accessType) {
+		super();
+		this.account = account;
+		this.accessType = accessType;
 	}
-	public void setId(String id) {
-		this.id = id;
+	
+	public void setAccount(Account account) {
+		this.account = account;
 	}
-	public String getPassword() {
-		return password;
+	public Account getAccount() {
+		return account;
 	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
+	
 	public String getAccessType() {
 		return accessType;
 	}

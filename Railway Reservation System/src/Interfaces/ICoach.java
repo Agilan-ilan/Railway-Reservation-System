@@ -2,19 +2,29 @@ package Interfaces;
 
 public interface ICoach {
 	
-	void setCoachName(String coachName);
+
 	String getCoachName();
 	
-	void setCoachType(String coachType);
+
 	String getCoachType();
 	
-	void setCoachCapacity(int coachCapacity);
+
 	int getCoachCapacity();
 	
-	void setseatReservationCount(int seatReservationCount);
 	int getseatReservationCount();
 	
-	void setIsAC(boolean isAC);
-	String getIsAC();
+	int getCoachSeatStartingNo();
+	
+	int getCoachSeatEndingNo();
+	
+	void setCoachCapacity(int coachCapacity);
+	
+	void setseatReservationCount(int seatReservationCount);
+	
+	void setCoachSeatStartingNo(int coachSeatStartingNo);
+	
+	void setCoachSeatEndingNo(int coachSeatEndingNo);
+	
+	boolean isAC();
 	
 }

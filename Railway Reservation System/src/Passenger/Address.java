@@ -1,3 +1,4 @@
+package Passenger;
 
 public class Address {
 	private int plotNo;

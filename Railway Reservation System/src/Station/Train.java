@@ -1,4 +1,7 @@
+package Station;
 import java.util.ArrayList;
+
+import Interfaces.ICoach;
 
 public class Train {
 
@@ -6,9 +9,27 @@ public class Train {
 	private String trainName;
 	private String startLocation;
 	private String endLocation;
-	private ArrayList<TimeSchedule> timeschedule=new ArrayList<>();
+	private ArrayList<ICoach> coaches=new ArrayList<>();
 
 	
+	public Train(String trainID, String trainName, String startLocation, String endLocation, ArrayList<ICoach> coaches) {
+		super();
+		this.trainID = trainID;
+		this.trainName = trainName;
+		this.startLocation = startLocation;
+		this.endLocation = endLocation;
+		this.coaches = coaches;
+	}
+	
+	
+
+
+	public ArrayList<ICoach> getCoaches() {
+		return coaches;
+	}
+	public void setCoaches(ArrayList<ICoach> coaches) {
+		this.coaches = coaches;
+	}
 	public String getTrainID() {
 		return trainID;
 	}
@@ -34,28 +55,6 @@ public class Train {
 		this.endLocation = endLocation;
 	}
 	
-	
-	protected class TimeSchedule{
-		
-		private String stationName;
-		private String arrivalTime;
-		private String depatureTime;
-		private String stoppingTime;
-		private String distancetTravelled;
-		
-		
-		public TimeSchedule(String stationName, String arrivalTime, String depatureTime, String stoppingTime,
-				String distancetTravelled) {
-			super();
-			this.stationName = stationName;
-			this.arrivalTime = arrivalTime;
-			this.depatureTime = depatureTime;
-			this.stoppingTime = stoppingTime;
-			this.distancetTravelled = distancetTravelled;
-		}
-		
-		
-		
-	}
+
 	
 }

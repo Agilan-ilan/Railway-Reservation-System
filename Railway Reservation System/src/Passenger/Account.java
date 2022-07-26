@@ -1,3 +1,4 @@
+package Passenger;
 
 public class Account {
 	
@@ -9,8 +10,24 @@ public class Account {
 	private String gender;
 	private int age;
 	private String password;
+	private Address address;
 	
 	
+	
+	
+	public Account(String id, String firstName, String lastName, String email, long phNo, String gender, int age,
+			String password, Address address) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.phNo = phNo;
+		this.gender = gender;
+		this.age = age;
+		this.password = password;
+		this.address = address;
+	}
 	
 	
 	public String getId() {
